@@ -8,10 +8,17 @@
         .flex-container{
             display: flex;
             background-color: bisque;
-            /* justify-content: space-evenly; */ /* space-around / flex-start / flex-end / center / space-between */
-            /* Vertical-align:center*/
-            align-items: center;
+            /* space-around / flex-start / flex-end / center / space-between */
+            justify-content: space-evenly; 
+            /* Vertical-alignment: center / flex-start / flex-end */
+            align-items:baseline ;
+            height: 200px; 
+            /*row-reverse / row / column-reverse / column */
+            flex-direction: row;
+            /* wrap / wrap-reverse */
+            flex-wrap: nowrap;
         }
+            
         .flex-item{
             background-color: cadetblue;
             margin: 10px;
