@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning elements: absolute</title>
+    <style>
+        .wrapper{
+            position: relative;
+            height: 200px;
+            background-color: burlywood;
+        }
+        .box{
+            position: absolute;
+            top: 10px;
+            right: 30px;
+            width: 150px;
+            height: 100px;
+            border: 2px solid black;
+            background-color: aqua;
+            border-radius: 10px;
+            box-shadow: 5px 4px black;
+            text-align: center;
+            margin: 10px;
+            color: red;
+            
+        }
+        body{
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <h2>Absolute Position</h2>
+     <div class="wrapper">
+        <p style="height: 1000px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus possimus facilis, ut nemo fugit porro vel fuga exercitationem? Sint dolores ex modi minus vero asperiores optio tempora numquam iste natus!</p>
+        <div class="box">Absolute Box</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laboriosam quia ea ut vero perferendis inventore nisi neque, totam iusto voluptatibus quis officiis sunt doloremque natus aliquid provident impedit necessitatibus.</p>
+     </div>
+</body>
+</html>
