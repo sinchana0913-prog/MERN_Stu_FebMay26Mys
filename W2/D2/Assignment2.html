@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notification Center</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center ">
+
+  <!-- Card Container -->
+  <div class="bg-white p-6 rounded-xl shadow-md w-full max-w-md m-6">
+
+    <!-- Header -->
+    <div class="flex justify-between items-center mb-5">
+      <h2 class="text-lg font-bold tracking-wide">
+        Notification Center
+      </h2>
+
+      <span class="inline-flex items-center px-3 py-1 text-xs font-medium bg-blue-100 text-blue-700 rounded-full">
+        3 New
+      </span>
+    </div>
+
+    <!-- Body -->
+    <div class="space-y-4">
+
+      <!-- Alert 1: Error -->
+      <div class="bg-red-100 border-l-4 border-red-500 p-4 rounded-md">
+        <h3 class="font-bold text-red-700">
+          Action Required
+        </h3>
+        <p class="text-red-600 leading-relaxed text-sm">
+          Your last payment attempt failed. Please update your payment method to avoid service interruption.
+        </p>
+      </div>
+
+      <!-- Alert 2: Neutral -->
+      <div class="bg-yellow-100 border-l-4 border-yellow-500 p-4 rounded-md">
+        <h3 class="font-bold text-yellow-800">
+          Maintenance Notice
+        </h3>
+        <p class="text-yellow-700 leading-relaxed text-sm">
+          The system will undergo maintenance tonight. Some features may be temporarily unavailable.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="flex gap-3 mt-6">
+
+      <!-- Primary Button -->
+      <button class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-md text-sm shadow">
+        View All
+      </button>
+
+      <!-- Secondary Button -->
+      <button class="border border-gray-400 text-gray-700 px-5 py-2 rounded-md text-sm hover:bg-gray-100">
+        Dismiss
+      </button>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
