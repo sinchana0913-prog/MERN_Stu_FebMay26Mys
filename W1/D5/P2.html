@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sinchana | Portfolio</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100  text-gray-800 scroll-smooth">
+
+  <!-- NAVBAR -->
+  <nav class="bg-white shadow-md fixed w-full z-10">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Sinchana</h1>
+      <div class="space-x-6 hidden md:block">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#skills" class="hover:text-blue-600">Skills</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class=" h-screen flex flex-col justify-center items-center text-center px-6">
+    <h1 class="text-5xl font-bold mb-4">Hi, I'm Sinchana</h1>
+    <img src="myphoto.jpeg" alt="Profile" class="w-32 h-32 rounded-full border-4 border-white shadow-lg mb-4">
+    <p class="text-lg text-gray-600 mb-6">
+      Final Year Computer Science Engineering student | AI Developer
+    </p>
+    <a href="#projects"
+       class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition">
+       View My Work
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-20 bg-white text-center px-6">
+    <h2 class="text-3xl font-bold mb-6">About Me</h2>
+    <p class="max-w-3xl mx-auto text-gray-600">
+      Passionate about building AI-driven solutions. Developed projects including
+      a two-way communication system for deaf people and an AI-powered resume builder.
+      Strong interest in full-stack and machine learning technologies.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="py-20 bg-gray-100 text-center px-6">
+    <h2 class="text-3xl font-bold mb-10">Skills</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+      <div class="bg-white p-4 rounded-lg shadow hover:scale-105 transition">HTML</div>
+      <div class="bg-white p-4 rounded-lg shadow hover:scale-105 transition">CSS</div>
+      <div class="bg-white p-4 rounded-lg shadow hover:scale-105 transition">JavaScript</div>
+      <div class="bg-white p-4 rounded-lg shadow hover:scale-105 transition">Python</div>
+      <div class="bg-white p-4 rounded-lg shadow hover:scale-105 transition">Machine Learning</div>
+      <div class="bg-white p-4 rounded-lg shadow hover:scale-105 transition">Tailwind CSS</div>
+      
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-20 bg-white text-center px-6">
+    <h2 class="text-3xl font-bold mb-10">Projects</h2>
+
+    <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+
+      <!-- Project 1 -->
+      <div class="bg-gray-100 p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+        <h3 class="text-xl font-semibold mb-3">
+          Two-Way Communication System
+        </h3>
+        <p class="text-gray-600 mb-4">
+          AI-based system enabling communication between deaf and normal individuals
+          using real-time gesture recognition.
+        </p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+          View Project
+        </button>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-gray-100 p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+        <h3 class="text-xl font-semibold mb-3">
+          Resume Builder using OpenAI
+        </h3>
+        <p class="text-gray-600 mb-4">
+          AI-powered platform that generates optimized resumes based on user input.
+        </p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+          View Project
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 bg-gray-100 text-center px-6">
+    <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+     <form class="bg-white p-6 rounded-xl shadow space-y-4">
+      <div>
+        <label class="block text-sm font-medium">Name</label>
+        <input type="text" class="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-cyan-400 outline-none">
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium">Email</label>
+        <input type="email" class="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-cyan-400 outline-none">
+      </div>
+
+      <div>
+        <select class="w-full p-2 border rounded-lg focus:ring-2 focus:ring-cyan-400 outline-none">
+          <option>FTE</option>
+          <option>Consultant</option>
+        </select>
+      </div>
+
+      <button class="w-full bg-cyan-600 text-white py-2 rounded-lg hover:bg-cyan-700 transition">
+        Send Message
+      </button>
+    </form>
+    <p class="mb-2">📧 sinchana0913@gmail.com</p>
+    
+    <p>💻 https://github.com/sinchana0913-prog</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-white text-center py-6 shadow-inner">
+    <p class="text-gray-600">© 2026 Sinchana. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

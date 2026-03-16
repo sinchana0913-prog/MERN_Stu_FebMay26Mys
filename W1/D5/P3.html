@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio 1</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+
+  <!-- 🔷 Navigation -->
+  <nav class="flex justify-between items-center p-6 bg-gray-950 shadow-lg">
+    <h1 class="text-2xl font-bold">MyPortfolio</h1>
+    <ul class="flex space-x-6">
+      <li><a href="#" class="hover:text-blue-400">Home</a></li>
+      <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+      <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🔷 Hero Section -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+    <h2 class="text-4xl md:text-6xl font-bold mb-6">
+      Hi, I'm <span class="text-blue-400">Your Name</span>
+    </h2>
+    <p class="text-lg text-gray-300 max-w-2xl">
+      Computer Science Engineer | AI Enthusiast | Full Stack Developer
+    </p>
+    <button onclick="openModal()" 
+      class="mt-8 bg-blue-600 px-6 py-3 rounded-xl hover:bg-blue-700 transition">
+      View Profile
+    </button>
+  </section>
+
+  <!-- 🔷 Projects Section -->
+  <section id="projects" class="py-16 px-8">
+    <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <div class="bg-gray-900 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h3 class="text-xl font-bold mb-3">AI Resume Builder</h3>
+        <p class="text-gray-400">AI powered resume generation system.</p>
+      </div>
+
+      <div class="bg-gray-900 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h3 class="text-xl font-bold mb-3">Smart Energy Meter</h3>
+        <p class="text-gray-400">IoT system with theft detection.</p>
+      </div>
+
+      <div class="bg-gray-900 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h3 class="text-xl font-bold mb-3">Deaf Communication System</h3>
+        <p class="text-gray-400">Two-way assistive communication model.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 🔷 Carousel Section -->
+  <section class="py-16 px-8">
+    <h2 class="text-3xl font-bold text-center mb-12">Highlights</h2>
+
+    <div class="overflow-x-auto flex space-x-6 pb-6">
+      <div class="min-w-[300px] bg-blue-600 p-8 rounded-xl">Achievement 1</div>
+      <div class="min-w-[300px] bg-purple-600 p-8 rounded-xl">Achievement 2</div>
+      <div class="min-w-[300px] bg-green-600 p-8 rounded-xl">Achievement 3</div>
+    </div>
+  </section>
+
+  <!-- 🔷 Contact Section -->
+  <section id="contact" class="py-16 text-center">
+    <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+    <p class="text-gray-400">youremail@example.com</p>
+  </section>
+
+  <!-- 🔷 Modal -->
+  <div id="modal" 
+    class="hidden fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center">
+
+    <div class="bg-white text-black p-8 rounded-2xl w-96 shadow-2xl">
+      <h2 class="text-2xl font-bold mb-4">Profile Info</h2>
+      <p class="mb-4">
+        Passionate developer focused on AI, IoT and scalable systems.
+      </p>
+      <button onclick="closeModal()" 
+        class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600">
+        Close
+      </button>
+    </div>
+
+  </div>
+
+  <!-- 🔷 Script -->
+  <script>
+    function openModal() {
+      document.getElementById("modal").classList.remove("hidden");
+    }
+    function closeModal() {
+      document.getElementById("modal").classList.add("hidden");
+    }
+  </script>
+
+</body>
+</html>
