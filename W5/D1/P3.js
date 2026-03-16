@@ -1,7 +1,7 @@
 console.log("Node JS Architecture demo");
 console.log("1.Script started");
 
-//SetTimeOut
+//SetTimeOut  
 setTimeout(()=>{
     console.log("3. Timer callback finished after waiting");
 },1000);
