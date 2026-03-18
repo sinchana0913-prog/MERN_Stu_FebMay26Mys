@@ -31,12 +31,15 @@
             <div
                 class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center lg:items-start mb-8">
 
-                <a href="#projects" class="bg-red-400 hover:bg-green-500 px-10 py-4 rounded shadow-xl">
+                <a href="project.pptx" class="bg-red-400 hover:bg-green-500 px-10 py-4 rounded shadow-xl">
                     View Projects
                 </a>
 
-                <a href="#resume" class="bg-blue-400 hover:bg-green-500 px-10 py-4 rounded shadow-xl">
+                <a href="resume.pptx" class="bg-blue-400 hover:bg-green-500 px-10 py-4 rounded shadow-xl">
                     Download Resume
+                </a>
+                <a href="https://github.com/sinchana0913-prog" class="bg-blue-400 hover:bg-green-500 px-10 py-4 rounded shadow-xl">
+                    View GitHub
                 </a>
 
             </div>
@@ -53,7 +56,7 @@
 
         <div class="order-1 lg:order-2 w-full lg:w-96 max-w-sm mx-auto lg:mx-0">
 
-            <img src="assets/images/img.jpg" alt="My photo"
+            <img src="myimage.jpeg" alt="My photo"
                 class="aspect-square w-full rounded shadow-lg mx-auto lg:mx-0 hover:ring-blue-500 transition-all duration-300 hover:scale-[1.02]"
                 loading="lazy">
 
@@ -69,14 +72,14 @@
 
             <a href="#"
                 class="text-2xl font-bold bg-clip-text bg-gradient-to-r from-red-400 to-slate-700 text-transparent">
-                RKR
+                
             </a>
 
             <ul class="hidden md:flex items-center gap-10">
 
                 <li><a href="#projects" class="text-lg font-bold hover:text-blue-600">Projects</a></li>
 
-                <li><a href="#experience" class="text-lg font-bold hover:text-blue-600">Experience</a></li>
+                <li><a href="#experience" class="text-lg font-bold hover:text-blue-600">Education</a></li>
 
                 <li><a href="#skills" class="text-lg font-bold hover:text-blue-600">Skills</a></li>
 
@@ -133,16 +136,17 @@
 
     <!-- EXPERIENCE -->
 
-    <section id="experience" class="py-24 px-8 lg:px-16">
+    <section id="Education" class="py-24 px-8 lg:px-16">
+
 
         <div class="max-w-4xl mx-auto">
-
             <h2 class="text-4xl text-gray-700 text-center mb-20">
-                Education and Experience
+                Education
             </h2>
-
-            <!-- existing experience cards remain unchanged -->
-
+           
+            <div id="education-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                       
+        </div>
         </div>
 
     </section>
@@ -187,6 +191,7 @@
                     <button id="modal-close" class="absolute top-6 right-6 text-2xl font-bold">
                         ×
                     </button>
+                    <button id="backToTop" class="fixed bottom-24 right-8 hidden bg-black text-white px-4 py-2 rounded">↑ Top</button>
 
                 </div>
 
@@ -223,12 +228,15 @@
     <!-- MAIN JS ENTRY -->
     <script src="js/data/projects.js"></script>
     <script src="js/data/skills.js"></script>
+    <script src="js/data/education.js"></script>
     <script src="js/features/skills-render.js"></script>
     <script src="js/main.js"></script>
     <script src="js/features/modal.js"></script>
     <script src="js/features/contact-validation.js"></script>
     <script src="js/features/theme-toggle.js"></script>
     <script src="js/features/project-search.js"></script>
+    <script src="js/features/developer-stats.js"></script>
+
 
 
 </body>

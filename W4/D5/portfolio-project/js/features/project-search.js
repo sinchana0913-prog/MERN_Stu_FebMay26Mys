@@ -41,18 +41,3 @@ function projectSearch(){
     });
     console.log("projects searched Successfully");
 }
-// SEARCH BAR 
-const searchInput = document.getElementById("project-search");
-
-searchInput.addEventListener("input", (e) => {
-    const term = e.target.value.toLowerCase();
-    
-    const filtered = projectsData.filter(project => {
-        return project.name.toLowerCase().includes(term) || 
-               project.category.toLowerCase().includes(term) ||
-               project.technologies.some(t => t.toLowerCase().includes(term));
-    });
-    projectSearch(filtered); 
-});
-
-document.addEventListener("DOMContentLoaded", () => projectSearch());
