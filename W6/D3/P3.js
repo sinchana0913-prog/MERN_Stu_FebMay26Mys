@@ -5,7 +5,7 @@ const path = require("path");
 const filePath = path.join(__dirname,"async-node.txt");
 
 //to write to a file
-fs.writeFile(
+fs.appendFile(
     filePath,
     "This is written asynchronously using writeFile().",
     function(writeError){
