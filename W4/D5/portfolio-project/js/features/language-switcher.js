@@ -16,7 +16,7 @@ function render(lang){
     out.textContent = "Current UI lang: "+lang;
     console.log("Rendered lang:",lang);
 }
-
+ 
 document.getElementById("langSelect").addEventListener("change",function(){
     render(this.value);
 });
