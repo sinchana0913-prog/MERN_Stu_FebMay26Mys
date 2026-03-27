@@ -8,7 +8,7 @@ const projectsData = [
     technologies: ["ReactJS", "ExpressJS", "MongoDB"],
     status: "Live",
     liveDemo: "#",
-    github: "#"
+    github: "#" 
   },
   {
     id: 2, 
