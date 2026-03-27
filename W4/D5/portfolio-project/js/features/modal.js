@@ -16,7 +16,7 @@ function initModal(){
             modalContent.classList.remove("scale-95","opacity-0");
         },10);
     }
-
+ 
     function closeModal(){
         modalContent.classList.add("scale-95","opacity-0");
         setTimeout(function(){
