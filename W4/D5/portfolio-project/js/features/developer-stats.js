@@ -16,7 +16,7 @@ function developerStats(){
         const iconBox = document.createElement("div");
         iconBox.className = "w-20 h-20 mx-auto mb-4 bg-green-900 rounded-2xl flex item-center justify-center";
 
-        //create icon text 
+        //create icon text  
         const iconText = document.createElement("span");
         iconText.className = "text-2xl text-white font-bold";
         iconText.textContent = education.shortLabel;
