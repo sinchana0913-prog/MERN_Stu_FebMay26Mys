@@ -6,7 +6,7 @@ function developerStats(){
         return;
     }
 
-    educationContainer.innerHTML = "";
+    educationContainer.innerHTML = ""; 
     educationData.forEach(function(education){
         //to create outer card
         const card = document.createElement("div");
