@@ -11,7 +11,7 @@ const projectsData = [
     github: "#"
   },
   {
-    id: 2,
+    id: 2, 
     name: "Gola",
     category: "MERN",
     description:
