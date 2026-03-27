@@ -17,7 +17,7 @@ const skillsData = [
     name: "JavaScript",
     shortLabel: "J",
     description: "DOM manipulation, events, validation, Fetch API, and storage."
-  },
+  }, 
   {
     id: 4,
     name: "MongoDB",
