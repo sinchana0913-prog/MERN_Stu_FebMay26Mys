@@ -11,7 +11,7 @@ function projectFilter(){
         //to create outer card
         const card = document.createElement("div");
         card.className = "p-8 text-center bg-white rounded-3xl shadow-lg";
-
+ 
         //create icon
         const iconBox = document.createElement("div");
         iconBox.className = "w-20 h-20 mx-auto mb-4 bg-green-900 rounded-2xl flex item-center justify-center";
