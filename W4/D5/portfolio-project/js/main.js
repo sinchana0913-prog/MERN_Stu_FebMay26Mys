@@ -15,7 +15,7 @@ const display = document.getElementById("visitorCount");
 
 let count = localStorage.getItem("visitorCount");
 
-if (count === null) {
+if (count === null) { 
   count = 0;
 }
 
