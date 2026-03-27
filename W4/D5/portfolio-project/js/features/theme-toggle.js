@@ -16,5 +16,5 @@ function initThemeToggle(){
             localStorage.setItem("portfolio-theme","light");
             console.log("light mode enabled");
         }
-    });
+    }); 
 }
