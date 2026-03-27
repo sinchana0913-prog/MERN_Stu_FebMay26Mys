@@ -20,7 +20,7 @@ function developerStats(){
         const iconText = document.createElement("span");
         iconText.className = "text-2xl text-white font-bold";
         iconText.textContent = education.shortLabel;
-        //put icon text inside icon box
+        //put icon text inside icon box 
         iconBox.appendChild(iconText);
 
         //create skill name
