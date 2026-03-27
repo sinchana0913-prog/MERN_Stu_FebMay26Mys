@@ -4,7 +4,7 @@ const educationData = [
     label: "VTU",
     college:"CIT College",
     study:"B.E in computer science(2022-2026)",
-    CGPA:"8.67"
+    CGPA:"8.67" 
   },
   {
     id: 2,
