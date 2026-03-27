@@ -14,7 +14,7 @@ function initContactValidation(){
  
         const name = contactName.value.trim();
         const email = contactEmail.value.trim();
-
+ 
         formMessage.textContent = "";
         formMessage.className = "text-sm";
 
