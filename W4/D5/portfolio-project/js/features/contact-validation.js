@@ -18,7 +18,7 @@ function initContactValidation(){
         formMessage.textContent = "";
         formMessage.className = "text-sm";
 
-        //Name validation
+        //Name validation 
         if(name === ""){
             formMessage.textContent = "Name is required";
             formMessage.classList.add("text-red-500");
