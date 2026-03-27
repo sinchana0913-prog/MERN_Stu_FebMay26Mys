@@ -13,7 +13,7 @@ const skillsData = [
     description: "Responsive layouts, utility-first styling, and clean UI building."
   },
   {
-    id: 3,
+    id: 3, 
     name: "JavaScript",
     shortLabel: "J",
     description: "DOM manipulation, events, validation, Fetch API, and storage."
