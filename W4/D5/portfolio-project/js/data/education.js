@@ -13,7 +13,7 @@ const educationData = [
     study:"PCMB:Science(2021-2022)",
     CGPA:"78%"
   },
-   { 
+   {  
     id: 3,
     label: "KSEAB",
     college:"kittur rani chennamma Residential school",
