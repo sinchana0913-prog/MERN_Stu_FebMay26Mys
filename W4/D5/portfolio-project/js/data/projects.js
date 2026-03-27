@@ -14,7 +14,7 @@ const projectsData = [
     id: 2, 
     name: "Gola",
     category: "MERN",
-    description:
+    description: 
       "Cab booking platform that helps users quickly book rides for daily travel.",
     technologies: ["ReactJS", "ExpressJS", "MongoDB"],
     status: "Live",
