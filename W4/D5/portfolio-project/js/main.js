@@ -18,7 +18,7 @@ let count = localStorage.getItem("visitorCount");
 if (count === null) { 
   count = 0;
 }
-
+ 
 
 display.textContent = count;
 
