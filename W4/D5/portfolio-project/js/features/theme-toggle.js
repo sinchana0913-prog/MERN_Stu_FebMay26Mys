@@ -17,4 +17,4 @@ function initThemeToggle(){
             console.log("light mode enabled");
         }
     }); 
-}
+} 
