@@ -19,7 +19,7 @@ if (count === null) {
   count = 0;
 }
  
-
+ 
 display.textContent = count;
 
 
