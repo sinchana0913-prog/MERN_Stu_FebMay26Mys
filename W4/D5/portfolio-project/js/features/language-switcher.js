@@ -8,7 +8,7 @@ const title = document.getElementById("title");
 const desc = document.getElementById("desc");
 const out = document.getElementById("out");
 
-function render(lang){
+function render(lang){ 
     const t = translations[lang] || translations.en;
     document.documentElement.lang = lang;
     title.textContent = t.title;
