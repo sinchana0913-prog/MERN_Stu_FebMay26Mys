@@ -6,9 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>portfolio-project V3.0</title>
+    <title>portfolio-project V3</title>
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+         <script src="https://cdn.tailwindcss.com"></script>
+
 
     <link rel="stylesheet" href="css/custom.css">
 
@@ -23,6 +25,13 @@
         <div class="order-2 lg:order-1 flex-1 lg:max-w-lg text-center lg:text-left">
 
             <h1 class="text-5xl mb-6">Sinchana</h1>
+            <!-- GREETING -->
+            <p id="greeting" class="text-lg text-gray-500 mb-2"></p>
+            <!-- TYPING -->
+            <p class="text-2xl font-bold mb-6">
+                I am a <span id="typing-text" class="text-blue-600"></span>
+            </p>
+
 
             <p class="text-xl lg:text-2xl text-slate-600 font-bold mb-10 max-w-md mx-auto lg:mx-0">
                 Full-Stack developer | MERN enthusiast | Competitive Programmer
@@ -30,6 +39,12 @@
 
             <div
                 class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center lg:items-start mb-8">
+                <!-- GEOLOCATION -->
+                <div>
+                    
+                <button id="locateBtn" class="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg transition duration-300">My Location</button>
+    <pre id="out"></pre>
+                <p id="message" class="mt-4 text-gray-700"></p></div>
 
                 <a href="#projects" class="bg-red-400 hover:bg-green-500 px-10 py-4 rounded shadow-xl">
                     View Projects
@@ -40,29 +55,54 @@
                 </a>
 
             </div>
+            
 
             <div class="flex flex-wrap gap-6 justify-center lg:justify-start text-sm font-bold">
-            <div class="flex flex-wrap gap-4 justify-center lg:justify-center text-sm font-bold"></div>
 
                 <span>800+ Github commits</span>
                 <span>100 LeetCode Questions Solved</span>
                 <span>5 live projects completed</span>
-            <div id="social-links"class="flex gap-6 mt-6 justify-center lg:justify-center"></div>
+<!-- Save contact -->
+    <div class="bg-white p-8 rounded-2xl shadow-xl w-96">
 
+        <h2 class="text-2xl font-bold mb-4 text-center">Contact Form</h2>
+
+        <form id="contactForm" class="space-y-4">
+
+            <input type="text" id="name" placeholder="Your Name" class="w-full p-2 border rounded">
+
+            <input type="email" id="email" placeholder="Your Email" class="w-full p-2 border rounded">
+
+            <input type="text" id="message" placeholder="Your Message" class="w-full p-2 border rounded">
+
+        </form>
+
+        <!-- Buttons -->
+        <div class="flex gap-2 mt-4">
+            <button id="clearBtn" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg w-full">
+                Clear Data
+            </button>
+        </div>
+
+        <!-- Status -->
+        <p id="status" class="text-sm text-green-600 mt-3 text-center"></p>
+
+    </div>
             </div>
 
         </div>
 
         <div class="order-1 lg:order-2 w-full lg:w-96 max-w-sm mx-auto lg:mx-0">
 
-            <img src="my_image.jpeg" alt="my photo"
+            <img src="my_image.jpeg" alt="My photo"
                 class="aspect-square w-full rounded shadow-lg mx-auto lg:mx-0 hover:ring-blue-500 transition-all duration-300 hover:scale-[1.02]"
                 loading="lazy">
-                <img src="assets/images/img.jpg" alt="my_photo.jpg">
 
         </div>
 
     </section>
+
+    
 
     <!-- NAVBAR -->
 
@@ -84,9 +124,7 @@
                 <li><a href="#skills" class="text-lg font-bold hover:text-blue-600">Skills</a></li>
 
             </ul>
-            <button id="theme-toggle"
-            class="bg-gray-200 px-4 py-2 rounded font-bold">Theme</button>
-
+            <button id="theme-toggle" class="bg-gray-300 px-4 py-2 rounded font-bold">Theme</button>
             <a href="#contact" class="bg-red-400 hover:bg-green-500 rounded transition-all duration-300 px-8 py-3">
                 Let's talk
             </a>
@@ -98,10 +136,6 @@
     <!-- PROJECTS -->
 
     <section id="projects" class="py-24 px-8 lg:px-16">
-
-    <p class="text-sm font-semibold mb-4">
-    </p>
-
 
         <div class="max-w-7xl mx-auto">
 
@@ -147,15 +181,12 @@
             <h2 class="text-4xl text-gray-700 text-center mb-20">
                 Education and Experience
             </h2>
-            
 
             <!-- existing experience cards remain unchanged -->
 
         </div>
 
     </section>
-     <div id="education-container" class="grid md:grid-cols-2 gap-8"></div>
-
 
     <!-- SKILLS -->
 
@@ -219,6 +250,7 @@
                         <button type="submit" class="flex-1 font-bold py-4 px-6">
                             Submit
                         </button>
+                        <button id="backToTop">↑ Top</button>
 
                     </div>
 
@@ -232,28 +264,27 @@
 
     <!-- MAIN JS ENTRY -->
      <script src="js/data/projects.js"></script>
-     <script src="js/data/skills.js"></script>
-      <script src="js/data/education.js"></script>
-     <script src="js/features/skills-render.js"></script>
-     <script src="js/features/modal.js"></script>
-     <script src="js/features/contact-validation.js"></script>
-      <script src="js/features/ Signup Validation.js"></script>
-      <script src="js/features/theme-toggle.js"></script>
-      <script src="js/features/project-search.js"></script>
-      <script src="js/main.js"></script>
-      <script src="js/features/developer-stats.js"></script>
-      <script src="js/features/back-to-top.js"></script>
-      <script src="js/features/geolocation.js"></script>
-      <script src="js/features/savecontactformdata.js"></script>
-      <script src="js/features/scrollprogress.js"></script>
-      <script src="js/features/themepersistance.js"></script>
-      <script src="js/features/typinganimation.js"></script>
-      <script src="js/features/active-navigation.js"></script>
-      <script src="js/features/contact-autosave.js"></script>
-      <script src="js/features/dynamic-greeting.js"></script>
-      <script src="js/features/collapse-description.js"></script>
-
-
+    <script src="js/data/skills.js"></script>
+    <script src="js/features/skills-render.js"></script>
+    <script src="js/features/modal.js"></script>
+    <script src="js/features/contact-validation.js"></script>
+    <script src="js/features/theme-toggle.js"></script>
+    <script src="js/features/project-search.js"></script>
+     <script src="js/features/scrollprogress.js"></script>
+     <script src="js/features/geolocation.js"></script>
+     <script src="js/features/typinganimation.js"></script>
+     <script src="js/features/savecontactformdata.js"></script>
+     <script src="js/features/backtotop.js"></script>
+     <script src="js/features/developer-stats.js"></script>
+     <script src="js/feature/contact-autosave.js"></script>
+     <script src="js/features/collapse-description.js"></script>
+     <script src="js/features/dynamic-greeting.js"></script>
+    <script src="js/main.js"></script>
+    
+<button id="backToTop"
+  class="hidden fixed bottom-8 left-8 bg-blue-600 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-blue-700 transition">
+  ↑ Top
+</button>
 </body>
 
 </html>
