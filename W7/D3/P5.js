@@ -18,11 +18,13 @@ console.log("Header section:",tokenParts[0]);
 console.log("Payload section:",tokenParts[1]);
 console.log("Signature section:",tokenParts[2]);
 console.log("JWT part count:",tokenParts.length);
+//const newSecretKey = "donkey123";
 
 try{
     //jwt.verify() checks trust signature and expiration
     const verifiedPayload = jwt.verify(token,secretKey);
-
+    //invalid token
+    //const verifiedPayload = jwt.verify(token,secretKey);
     console.log("Verified Payload",verifiedPayload);
 }
 catch(error){
