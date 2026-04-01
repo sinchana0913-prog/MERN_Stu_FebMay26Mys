@@ -1,18 +1,24 @@
-const backToTopBtn = document.getElementById("backToTop");
+function initBackToTop() {
+    const btn = document.getElementById("backToTop");
+    if (!btn) {
+        console.log("Button not found ❌");
+        return;
+    }
 
-// Show button when scrolling down
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 300) {
-    backToTopBtn.classList.remove("hidden");
-  } else {
-    backToTopBtn.classList.add("hidden");
-  }
-});
+    console.log("BackToTop working ✅");
 
-// Scroll to top smoothly
-backToTopBtn.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-});
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+            btn.classList.remove("hidden");
+        } else {
+            btn.classList.add("hidden");
+        }
+    });
+
+    btn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+}
