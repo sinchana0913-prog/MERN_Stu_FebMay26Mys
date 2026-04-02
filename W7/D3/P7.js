@@ -5,8 +5,8 @@ const app = express();
 const secretKey = "monkey123";
 
 const userToken = jwt.sign({ userId: 1, role: "user", email: "sinchana@email.com" }, secretKey, { expiresIn: "1h" });
-const adminToken = jwt.sign({ userId: 2, role: "admin", email: "manga@email.com" }, secretKey, { expiresIn: "1h" });
 console.log("Usertoken:",userToken);
+const adminToken = jwt.sign({ userId: 2, role: "admin", email: "manga@email.com" }, secretKey, { expiresIn: "1h" });
 console.log("Admintoken:",adminToken);
 
 function authenticateToken(req, res, next) {
