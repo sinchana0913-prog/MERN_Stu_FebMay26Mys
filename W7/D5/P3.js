@@ -60,6 +60,6 @@ app.use(function(error,req,res,necxt){
 });
 
 app.listen(4000,function(){
-    console.log("JWT demo server running at http://localhost:4000");
+    console.log("express-session demo server running at http://localhost:4000");
 });
 
