@@ -33,7 +33,7 @@ function authenticateAccessToken(req, res, next) {
         success: false,
         message: "Access token has expired",
       });
-    }
+    } 
     return res.status(401).json({
       success: false,
       message: "Access token is invalid",
