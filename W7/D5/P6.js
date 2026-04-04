@@ -5,21 +5,9 @@ const jwt = require("jsonwebtoken");
 const app = express();
 const secretKey = "monkey@123";
 
-const userToken = jwt.sign(
-    {userId:101,role:"user",email:"e@e.com"},
-    secretKey,
-    {expiresIn:"1h"}
-);
-const managerToken = jwt.sign(
-    {userId:102,role:"manager",email:"m@e.com"},
-    secretKey,
-    {expiresIn:"1h"}
-);
-const adminToken = jwt.sign(
-    {userId:103,role:"admin",email:"a@e.com"},
-    secretKey,
-    {expiresIn:"1h"}
-);
+const userToken = jwt.sign({userId:101,role:"user",email:"e@e.com"}, secretKey,{expiresIn:"1h"});
+const managerToken = jwt.sign({userId:102,role:"manager",email:"m@e.com"},secretKey,{expiresIn:"1h"});
+const adminToken = jwt.sign( {userId:103,role:"admin",email:"a@e.com"},secretKey,{expiresIn:"1h"});
 
 console.log("User token",userToken);
 console.log("manager token",managerToken);
