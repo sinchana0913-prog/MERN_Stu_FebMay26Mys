@@ -11,7 +11,7 @@ const userToken = jwt.sign(
     {expiresIn:"1h"}
 );
 const managerToken = jwt.sign(
-    {userId:102,role:"manager",email:"m@e.com"},
+    {userId:102,role:"manager",email:"m@e.com"},                
     secretKey,
     {expiresIn:"1h"}
 );
