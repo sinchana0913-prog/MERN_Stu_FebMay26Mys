@@ -1,4 +1,4 @@
-//callback baed validation functions
+//callback based validation functions
 
 function validateMovieSelection(movies,movieId,callback){
     const selectedMovie = movies.find((movie)=>movie.id ===movieId);
@@ -9,7 +9,7 @@ function validateMovieSelection(movies,movieId,callback){
     callback(null,selectedMovie);
 }
 function validateTimeSelection(movie,selectedTime,callback){
-    const selectedShowTime = movie.showTimes.find((show)=>show.time.toLowerCase()===selectedTime.toLowerCase());
+    const selectedShowTime = movie.showtimes.find((show)=>show.time.toLowerCase()===selectedTime.toLowerCase());
 
     if(!selectedShowTime) {
         return callback("Invalid time slot selection. Choose a valid time slot.",null);
