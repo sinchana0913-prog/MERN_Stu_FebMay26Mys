@@ -5,4 +5,4 @@ const EventEmitter = require("events");
 //custom eventemitter object
 const bookingEmitter = new EventEmitter();
 
-module.export = bookingEmitter;
+module.exports = bookingEmitter;
