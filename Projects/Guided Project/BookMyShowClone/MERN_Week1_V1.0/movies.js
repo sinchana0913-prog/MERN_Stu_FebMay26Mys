@@ -1,0 +1,34 @@
+//movie.js
+//This file stores the movie data used in the CLI App
+
+const movies = [
+    {
+        id:1,
+        title:"Dhurandar 2",
+        showtimes:[
+            {time:"10:00 AM",seatsAvailable: 100},
+            {time:"1:00 PM",seatsAvailable: 70},
+            {time:"6:00 PM",seatsAvailable: 300}
+        ]
+    },
+    {
+        id:2,
+        title:"love mocktail 3",
+        showtimes:[
+            {time:"10:00 AM",seatsAvailable: 100},
+            {time:"1:00 PM",seatsAvailable: 70},
+            {time:"6:00 PM",seatsAvailable: 300}
+        ]
+    },
+    {
+        id:3,
+        title:"max",
+        showtimes:[
+            {time:"10:00 AM",seatsAvailable: 100},
+            {time:"1:00 PM",seatsAvailable: 70},
+            {time:"6:00 PM",seatsAvailable: 300}
+        ]
+    }
+];
+//export the movie data so that other files can use it.
+module.export = movies;
