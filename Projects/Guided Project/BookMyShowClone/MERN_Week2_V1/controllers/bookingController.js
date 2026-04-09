@@ -1,5 +1,5 @@
 //Does the ticket booking
-const movies = require("/data/mmovies");
+const movies = require("../data/movies");
 const customError = require("../utils/customError");
 
 const bookings = [];
