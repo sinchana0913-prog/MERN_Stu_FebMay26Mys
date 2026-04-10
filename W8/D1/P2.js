@@ -22,7 +22,7 @@ async function runCrudDemo() {
             role: "demo-student"
         });
         await firstStudent.save();
-        //console.log("created new student with save()",firstStudent);
+        console.log("created new student with save()",firstStudent);
         //create using create()
         const secondStudent = await Student.create({
             name: "chethan",
