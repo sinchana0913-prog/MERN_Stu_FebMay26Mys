@@ -4,4 +4,8 @@ function loggerMiddleware(req,res,next){
     next();
 }
 module.exports = loggerMiddleware;
+
+
 //Task:write the log to a file along with timestamp req & res
+
+
