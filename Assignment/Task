@@ -1,0 +1,27 @@
+const fs = require('fs');
+const path = require('path');
+
+function loggerMiddleware(req, res, next) {
+    const startTime = new Date();
+
+    // Event listener triggered when the response is sent
+    res.on('finish', () => {
+        const endTime = new Date();
+        const logEntry = `
+[${startTime.toISOString()}] REQ: ${req.method} ${req.originalUrl}
+[${endTime.toISOString()}] RES: Status ${res.statusCode}
+-----------------------------------------
+`;
+
+        // Append log to 'access.log' file
+        fs.appendFile(path.join(__dirname, 'access.log'), logEntry, (err) => {
+            if (err) {
+                console.error("Failed to write to log file:", err);
+            }
+        });
+    });
+
+    next();
+}
+
+module.exports = loggerMiddleware;
