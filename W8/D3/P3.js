@@ -7,7 +7,7 @@ async function runRemoveHookDemo(){
         const courseSchema = new mongoose.Schema({
             title:String,
             tag:String
-        });
+        }); 
         courseSchema.pre("deleteOne",{
             document:true,query:false
         },function(){
