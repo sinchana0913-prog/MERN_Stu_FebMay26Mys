@@ -1,7 +1,7 @@
 //Manage user-related operation
 let users = [];
 let currentUser = null;
-
+ 
 // Create Profile
 function createUser(name, headline) {
     const user = {
