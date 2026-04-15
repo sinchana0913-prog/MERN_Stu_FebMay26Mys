@@ -85,11 +85,11 @@ async function main(){
          });
 
          const student1 = await Student.create({
-            name:"shalini",
+            name:"sinchana",
             courses:[course1._id,course2._id]
          });
          const student2 = await Student.create({
-            name:"santhu",
+            name:"cheth",
             courses:[course2._id]
          });
 // update courses with students
