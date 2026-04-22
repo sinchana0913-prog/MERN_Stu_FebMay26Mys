@@ -1,9 +1,9 @@
 const authService = require("../services/auth.service");
 
 //register
-exports.register = async(requestAnimationFrame,resizeBy,next)=>{
+exports.register = async(req,res,next)=>{
     try{
-        const result = await authService.registerUser(requestAnimationFrame.body);
+        const result = await authService.registerUser(req.body);
         res.status(201).json({
             success:true,
             message:"User registered OTP sent.",
@@ -16,7 +16,7 @@ exports.register = async(requestAnimationFrame,resizeBy,next)=>{
 };
 
 //verify otp
-exports.verifyOTP = async(requestAnimationFrame,res,next)=>{
+exports.verifyOTP = async(req,res,next)=>{
     try{
         await authService.verifyOTP(req.body);
 
