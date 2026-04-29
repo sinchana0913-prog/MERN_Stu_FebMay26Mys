@@ -1,4 +1,6 @@
 // Props destructuring
+//a syntax of ES6 APPROACH THAT ALLOWS US TO UNPACK PROPERTIES FROM from props
+//prop object directly into its values
 import { React } from "react";
 //Child component
 function UserProfile({username,skill}){
