@@ -6,6 +6,10 @@ import { SharedStateParent } from './components/P5'
 import { CompositionDemo } from './components/P6'
 import { ObjectsAndArrayProps } from './components/P7'
 import{PropsImmutability} from './components/P8'
+import{PropsState} from './components/P9'
+import { FunctionProps } from './components/P10'
+import{PropTypesDemo} from './components/P11'
+import { HOCExample } from './components/P12'
 import './App.css'
 //import { PropDestructuring } from './components/P2'
 
@@ -21,7 +25,11 @@ function App() {
    {/*<SharedStateParent/>*/}
    {/*<CompositionDemo/>*/}
    {/*<ObjectsAndArrayProps/>*/}
-   <PropsImmutability/>
+   {/*<PropsImmutability/>*/}
+   {/*<PropsState/>*/}
+   {/*<FunctionProps/>*/}
+   {/*<PropTypesDemo/>*/}
+   <HOCExample/>
     </>
   )
 }
