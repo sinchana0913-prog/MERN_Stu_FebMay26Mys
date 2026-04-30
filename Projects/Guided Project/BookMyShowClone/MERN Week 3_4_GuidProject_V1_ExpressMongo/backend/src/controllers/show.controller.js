@@ -16,7 +16,7 @@ exports.createShow = async (req,res,next)=>{
 };
 
 //get shows
-exports.getShow = async (req,res,next)=>{
+exports.getShows = async (req,res,next)=>{
     try{
         const shows = await showService.getShow(req.query);
         res.status(200).json({
