@@ -45,7 +45,7 @@ exports.updateMovie = async(req,res,next)=>{
   }
 };
 //delete movie
-exports.deleteeMovie = async(req,res,next)=>{
+exports.deleteMovie = async(req,res,next)=>{
   try{
     await movieService.deleteMovie(req.params.id);
 
