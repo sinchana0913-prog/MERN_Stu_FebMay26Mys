@@ -1,4 +1,5 @@
- const movie = require("../models/Movie");
+ const Movie = require("../models/Movie");
+ const CustomError = require("../utils/customError");
 
 //Create Movie
 exports.createMovie = async (data) =>{
@@ -51,13 +52,13 @@ exports.getMovies = async(query)=>{
 
 //update movie
 exports.updateMovie = async(Id,data)=>{
-    const movie = await Movie.findByIdUpdate(Id,data,{
+    const movie = await Movie.findByIdAndUpdate(Id,data,{
         new:true,
         runValidators:true,
     });
 
     if(!movie)
-        throw new Error("Movie not found");
+        throw new CustomError("Movie not found",404);
 
         return movie;
     
