@@ -1,11 +1,19 @@
 import { useState } from 'react'
 import { UseContextIntro } from './components/P1'
+import { CustomHooksIntro } from './components/P2'
+import { UserRefIntro } from './components/P3'
+import { UseReducerIntro } from './components/P4'
+import { UseCallbackIntro } from './components/P5'
 import './App.css'
 
 function App() {
   return(
     <>
-      <UseContextIntro/>
+      {/* <UseContextIntro/> */}
+      {/* <CustomHooksIntro/> */}
+      {/* <UserRefIntro/> */}
+      {/* <UseReducerIntro/> */}
+      <UseCallbackIntro/>
     </>
   )
 }
