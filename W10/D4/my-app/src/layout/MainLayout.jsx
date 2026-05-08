@@ -4,9 +4,9 @@ import { NavLink, Outlet } from "react-router-dom";
 
 export function MainLayout() {
     return (
-        <section>
+        <section>    
             <h2>Main Layout</h2>
-            {/* Navigation bar */}
+            {/* Navigation bar */}  
             <nav>
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="/about">About Us</NavLink>
