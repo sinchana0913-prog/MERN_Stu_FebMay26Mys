@@ -4,6 +4,7 @@ import{useState} from "react";
 // Return an array with 2 values
 //1.Current state value
 //2. Function to update state
+//every hook start with use
 //syntax:
 //const [stateValue,setStateValue]=useState(initialValue);
 
