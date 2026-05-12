@@ -4,6 +4,7 @@ import { CustomHooksIntro } from './components/P2'
 import { UserRefIntro } from './components/P3'
 import { UseReducerIntro } from './components/P4'
 import { UseCallbackIntro } from './components/P5'
+import {Cart} from './components/P6'
 import './App.css'
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
       {/* <CustomHooksIntro/> */}
       {/* <UserRefIntro/> */}
       {/* <UseReducerIntro/> */}
-      <UseCallbackIntro/>
+      {/* <UseCallbackIntro/> */}
+      <Cart/>
     </>
   )
 }
