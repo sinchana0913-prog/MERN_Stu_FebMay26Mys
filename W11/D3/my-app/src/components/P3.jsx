@@ -11,7 +11,7 @@ export function AxiosLifecycle(){
             loadPosts(controller.signal);
             return()=>{
                 controller.abort();
-            };
+            }; 
     },[]);
 
     async function loadPosts(signal) {
