@@ -4,6 +4,7 @@ import {ManagingApiState} from './components/P1.jsx'
 import{UseEffectLifecycle} from './components/P2.jsx'
 import { AxiosLifecycle } from './components/P3.jsx'
 import { CRUDOperation } from './components/P4.jsx'
+import { PaginationCaching } from './components/P5.jsx'
 function App() {
   
 
@@ -12,7 +13,8 @@ function App() {
       {/* <ManagingApiState /> */}
       {/* <UseEffectLifecycle/> */}
       {/* <AxiosLifecycle/> */}
-      <CRUDOperation/>
+      {/* <CRUDOperation/> */}
+      <PaginationCaching/>
     </>
   )
 }
