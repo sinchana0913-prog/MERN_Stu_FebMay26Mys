@@ -1,39 +1,45 @@
-// src/components/MovieCard.jsx
-import { useNavigate } from "react-router-dom";
+/*
+=========================================================
+SPRINT 4 – SHOW CARD
+TOPICS COVERED
+✓ Reusable Components
+✓ Props
+✓ Event Handling
+=========================================================
+*/
 
-export default function MovieCard({ movie }) {
-  const navigate = useNavigate();
-
+export default function ShowCard({ show, onBook }) {
   return (
-    <div style={styles.card} onClick={() => navigate(`/movies/${movie._id}`)}>
-      <h3>{movie.title}</h3>
-
+    <article style={styles.card}>
       <p>
-        <strong>Genre:</strong> {movie.genre}
+        <strong>Date:</strong> {new Date(show.date).toLocaleDateString()}
       </p>
 
       <p>
-        <strong>Rating:</strong> {movie.rating}
+        <strong>Time:</strong> {show.time}
       </p>
 
       <p>
-        <strong>Duration:</strong> {movie.duration} mins
+        <strong>Available Seats:</strong> {show.availableSeats}
       </p>
 
-      <p>
-        <strong>Release:</strong>{" "}
-        {new Date(movie.releaseDate).toLocaleDateString()}
-      </p>
-    </div>
+      <button onClick={() => onBook(show)} style={styles.button}>
+        Book Tickets
+      </button>
+    </article>
   );
 }
-
 const styles = {
   card: {
-    cursor: "pointer",
     background: "#fff",
     border: "1px solid #ddd",
     borderRadius: "8px",
     padding: "20px",
+  },
+
+  button: {
+    marginTop: "15px",
+    padding: "10px 15px",
+    cursor: "pointer",
   },
 };
