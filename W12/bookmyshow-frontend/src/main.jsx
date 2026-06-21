@@ -55,8 +55,7 @@ import "./index.css";
 
 import { AuthProvider } from "./context/AuthContext";
 import { Provider } from "react-redux";
-import { store } from "./redux/store.jsx";
-import { fetchMovies } from "./redux/movies/moviesSlice.jsx";
+import { store } from "./redux/store";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

@@ -3,7 +3,6 @@
 /*
 =========================================================
 SPRINT 6 – BOOKING PAGE
-
 TOPICS COVERED:
 ✓ useLocation
 ✓ useNavigate
@@ -12,6 +11,7 @@ TOPICS COVERED:
 ✓ Async/Await
 ✓ Loading State
 ✓ Error Handling
+
 
 WHY THIS COMPONENT?
 
@@ -34,13 +34,17 @@ Booking Success
 =========================================================
 */
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { useLocation, useNavigate } from "react-router-dom";
 
 import SeatGrid from "../components/SeatGrid";
 
 import { createBooking } from "../api/booking.api";
+
+import { getShowById } from "../api/show.api";
+
+import LoadingSpinner from "../components/LoadingSpinner";
 
 export default function Bookings() {
   const location = useLocation();
@@ -69,6 +73,20 @@ export default function Bookings() {
 
   /*
   =====================================================
+  LOCAL STATE
+
+
+  =====================================================
+  */
+
+  const [selectedSeats, setSelectedSeats] = useState([]);
+
+  const [loading, setLoading] = useState(false);
+
+  const [error, setError] = useState("");
+
+  /*
+  =====================================================
   DIRECT ACCESS
 
 
@@ -94,19 +112,21 @@ export default function Bookings() {
 
   const { movie, show } = bookingData;
 
-  /*
-  =====================================================
-  LOCAL STATE
+  const [showDetails, setShowDetails] = useState(null);
 
+  useEffect(() => {
+    async function fetchShow() {
+      try {
+        const response = await getShowById(show._id);
 
-  =====================================================
-  */
+        setShowDetails(response.data);
+      } catch (error) {
+        console.error(error);
+      }
+    }
 
-  const [selectedSeats, setSelectedSeats] = useState([]);
-
-  const [loading, setLoading] = useState(false);
-
-  const [error, setError] = useState("");
+    fetchShow();
+  }, [show._id]);
 
   /*
   =====================================================
@@ -130,13 +150,16 @@ export default function Bookings() {
 
       alert("Booking created successfully!");
 
-     navigate("/my-bookings");
-
+      navigate("/my-bookings");
     } catch (error) {
       setError(error.response?.data?.message || "Booking failed");
     } finally {
       setLoading(false);
     }
+  }
+
+  if (!showDetails) {
+    return <LoadingSpinner />;
   }
 
   return (
@@ -154,7 +177,7 @@ export default function Bookings() {
 
         <p>Time: {show.time}</p>
 
-        <p>Available Seats: {show.availableSeats}</p>
+        <p>Available Seats: {showDetails.availableSeats}</p>
       </div>
 
       {error && <p style={styles.error}>{error}</p>}
@@ -162,7 +185,7 @@ export default function Bookings() {
       <h2>Select Seats</h2>
 
       <SeatGrid
-        seats={show.seats}
+        seats={showDetails.seats}
         selectedSeats={selectedSeats}
         setSelectedSeats={setSelectedSeats}
       />
