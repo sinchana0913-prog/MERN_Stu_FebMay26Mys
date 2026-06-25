@@ -1,5 +1,4 @@
 // MERN_Stu_FebMay26Mys\W9\D0\movie-booking-backend\src\controllers\admin.controller.js
-// MERN_Stu_FebMay26Mys\W9\D0\movie-booking-backend\src\controllers\admin.controller.js
 const Movie = require("../models/Movie");
 const Show = require("../models/Show");
 const Booking = require("../models/Booking");
